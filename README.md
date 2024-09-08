@@ -2,6 +2,9 @@
 
 Chat Vision es una aplicación web de chat que permite a los usuarios enviar mensajes de texto e imágenes.
 
+## Requerimientos
+Tener instalado ollama y el modelo llava:13b
+
 ## Funcionalidades
 
 - Enviar mensajes de texto.
