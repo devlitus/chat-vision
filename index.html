@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat vision</title>
+    
+  </head>
+  <body>
+    <div id="app">
+      
+      <div id="chatContainer">
+        <div id="chatMessages"></div>
+        <form id="chatForm">
+          <div id="chatInputContainer">
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+            <label for="imageInput" id="uploadIcon">
+              <img class="iconImage" src="./src/assets/file.svg" alt="Subir imagen" >
+            </label>
+            <input type="text" id="chatInput" placeholder="Escribe un mensaje..." required>
+          </div>
+          <button type="submit" id="sendButton">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

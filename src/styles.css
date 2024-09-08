@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #494949;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#chatContainer {
+  width: 100%;
+  max-width: 800px;
+  min-width: 800px;
+  background-color: #494949;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+#chatMessages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  border-bottom: 1px solid #494949;
+}
+
+.iconImage {
+  width: 24px;
+  height: 24px;
+}
+
+.message {
+  margin-bottom: 15px;
+}
+
+.message.user {
+  text-align: right;
+}
+
+.message.bot {
+  text-align: left;
+}
+
+.message p {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 70%;
+}
+
+.message.user p {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.message.bot p {
+  background-color: #e0e0e0;
+  color: #d5d5d5;
+}
+
+.bot {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+#chatForm {
+  display: flex;
+  padding: 10px;
+  background-color: #494949;
+  align-items: center;
+}
+
+#chatInputContainer {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#chatInput {
+  flex: 1;
+  padding: 20px 10px 20px 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+#uploadIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#sendButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#sendButton:hover {
+  background-color: #0056b3;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #007bff;
+  width: 24px;
+  height: 24px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
