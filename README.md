@@ -32,3 +32,4 @@ Tener instalado ollama y el modelo llava:13b
 - `src/styles.css:` Archivo de estilos.
 - `src/main.ts:` Archivo principal de JavaScript/TypeScript.
 
+![Descripción de la imagen](./public/screenshort.png)
